@@ -4,6 +4,8 @@ public class Student {
 
     private String firstName;
     private String lastName;
+    private String userName;
+    private  String password;
 
     public String getFirstName() {
         return firstName;
