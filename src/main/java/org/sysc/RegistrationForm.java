@@ -14,6 +14,10 @@ public class RegistrationForm extends JFrame {
     private JLabel lblLastName;
     private JTextField tfLastName;
     private JButton btnSignUp;
+    private JLabel lblUserName;
+    private JTextField tfUserName;
+    private JLabel lblPassword;
+    private JPasswordField pfPassword;
 
     private final StudentManager studentManager;
     RegistrationForm(){
@@ -28,7 +32,9 @@ public class RegistrationForm extends JFrame {
             @Override
 
             public void actionPerformed(ActionEvent e) {
-                Student  student =   new Student(tfFirstName.getText(), tfLastName.getText());
+                char[] passwordChars = pfPassword.getPassword();
+                String password = new String(passwordChars);
+                Student  student =   new Student(tfFirstName.getText(), tfLastName.getText(), tfUserName.getText(), password);
                 if(!studentManager.addStudent(student)){
                     JOptionPane.showMessageDialog(null, "No more space available.");
                 }else{
