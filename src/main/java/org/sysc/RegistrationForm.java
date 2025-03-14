@@ -1,9 +1,10 @@
 package org.sysc;
 
-import org.sysc.Model.Student;
 import org.sysc.Model.StudentManager;
+import org.sysc.Validator.InputValidator;
 
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -18,30 +19,59 @@ public class RegistrationForm extends JFrame {
     private JTextField tfUserName;
     private JLabel lblPassword;
     private JPasswordField pfPassword;
+    private JLabel lblAge;
+    private JTextField tfAge;
+    private JLabel lblGender;
+    private JLabel lblContact;
+    private JTextField tfContact;
+    private JLabel lblYearLvl;
+    private JRadioButton rbOption2;
+    private JRadioButton rbOption1;
+    private JRadioButton rbOption3;
+    private JRadioButton a4thRadioButton;
+    private JLabel lblFirstNameError;
+    private JLabel lvlAgeError;
+    private JLabel lblLastNameError;
+    private JRadioButton maleRadioButton;
+    private JRadioButton femaleRadioButton;
+    private JRadioButton BSCSRadioButton;
+    private JRadioButton BSITRadioButton;
+    private JRadioButton BSBAMRadioButton;
+    private JRadioButton bullShitRadioButton;
 
     private final StudentManager studentManager;
     RegistrationForm(){
         studentManager = new StudentManager(100);
         setContentPane(MainPanel);
+        // Wrap MainPanel in a JScrollPane
+        JScrollPane scrollPane = new JScrollPane(MainPanel);
+
+        // Add the JScrollPane to the JFrame
+        setContentPane(scrollPane);
         setTitle("Rem");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(1280,960);
+        setSize(1024,768);
         setVisible(true);
-        setResizable(false);
         btnSignUp.addActionListener(new ActionListener() {
             @Override
 
             public void actionPerformed(ActionEvent e) {
-                char[] passwordChars = pfPassword.getPassword();
-                String password = new String(passwordChars);
-                Student  student =   new Student(tfFirstName.getText(), tfLastName.getText(), tfUserName.getText(), password);
-                if(!studentManager.addStudent(student)){
-                    JOptionPane.showMessageDialog(null, "No more space available.");
-                }else{
-                    JOptionPane.showMessageDialog(null, "Student Added: " + student.getFirstName() + " " + student.getLastName());
-                }
+               String firstNameError = InputValidator.validateName(tfFirstName.getText());
+               String lastNameError = InputValidator.validateName(tfLastName.getText());
+               String ageError = InputValidator.validateAge(tfAge.getText());
+               lvlAgeError.setText(ageError);
+               lvlAgeError.setForeground(Color.red);
+               lblFirstNameError.setText(firstNameError);
+               lblFirstNameError.setForeground(Color.red);
+               lblLastNameError.setText(lastNameError);
+               lblLastNameError.setForeground(Color.red);
             }
         });
+
+
+
+
+
     }
 
 }
