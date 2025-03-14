@@ -4,6 +4,12 @@ public class Student {
 
     private String firstName;
     private String lastName;
+    private int age;
+    private String gender;
+    private String course;
+    private String address;
+    private int contact;
+    private int yearLvl;
     private String userName;
     private  String password;
 
