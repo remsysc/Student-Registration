@@ -1,7 +1,7 @@
 package org.sysc.Model;
 
 public class StudentManager {
-    private Student[] students;
+    private final Student[] students;
     private int studentCount;
     public  StudentManager(int capacity){
         students = new Student[capacity];
