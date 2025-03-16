@@ -1,4 +1,4 @@
-package org.sysc.Validator;
+package org.sysc.Utility.InputValidator;
 
 public class InputValidator
 {
