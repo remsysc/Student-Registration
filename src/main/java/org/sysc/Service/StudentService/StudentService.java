@@ -4,7 +4,7 @@ import org.sysc.Model.Student;
 import org.sysc.Model.StudentManager;
 
 public class StudentService {
-    private StudentManager studentManager;
+    private final StudentManager studentManager;
 
     public StudentService(int capacity) {
         // Initialize StudentManager with the given capacity
@@ -12,13 +12,18 @@ public class StudentService {
     }
 
     // Wrapper method to add a student
-    public boolean addStudent(String firstName, String lastName) {
-        Student student = new Student(firstName, lastName);
+    public boolean addStudent(String username) {
+        Student student = new Student(username);
         return studentManager.addStudent(student);
     }
 
     // Wrapper method to get the total number of students
     public int getStudentCount() {
         return studentManager.getStudentCount();
+    }
+
+    public boolean isUsernameTaken(String username){
+
+        return studentManager.isUsernameTaken(username);
     }
 }

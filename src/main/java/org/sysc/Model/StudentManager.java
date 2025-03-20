@@ -19,4 +19,14 @@ public class StudentManager {
     public int getStudentCount() {
         return studentCount;
     }
+
+    public boolean isUsernameTaken(String username){
+        for(int i =0; i < studentCount;i++){
+            if(students[i].getUsername().equalsIgnoreCase(username)){
+                return true;
+            }
+        }
+
+        return false;
+    }
 }
