@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.sysc.RegistrationForm">
-  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="13" column-count="8" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="MainPanel" layout-manager="GridLayoutManager" row-count="14" column-count="9" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
       <xy x="134" y="45" width="1070" height="490"/>
@@ -20,7 +20,7 @@
       </component>
       <component id="4f14e" class="javax.swing.JButton" binding="btnSignUp">
         <constraints>
-          <grid row="12" column="0" row-span="1" col-span="8" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="13" column="0" row-span="1" col-span="8" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Sign Up"/>
@@ -86,23 +86,23 @@
       </component>
       <component id="d5dbd" class="javax.swing.JTextField" binding="tfContact">
         <constraints>
-          <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="16"/>
+          <grid row="6" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="48"/>
           </grid>
         </constraints>
         <properties/>
       </component>
       <component id="10431" class="javax.swing.JTextField" binding="tfEmail">
         <constraints>
-          <grid row="5" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="16"/>
+          <grid row="6" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="48"/>
           </grid>
         </constraints>
         <properties/>
       </component>
       <component id="c7184" class="javax.swing.JLabel" binding="lblACA">
         <constraints>
-          <grid row="6" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Arts Culture Affairs Organization:"/>
@@ -110,7 +110,7 @@
       </component>
       <component id="d9c61" class="javax.swing.JPasswordField" binding="pfConfirmPassword">
         <constraints>
-          <grid row="11" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="12" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
@@ -124,17 +124,17 @@
         </constraints>
         <properties/>
       </component>
-      <component id="a9978" class="javax.swing.JRadioButton" binding="rdDSA">
+      <component id="a9978" class="javax.swing.JRadioButton" binding="rbDSA">
         <constraints>
-          <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Dangal Singing Ambassadors"/>
         </properties>
       </component>
-      <component id="44843" class="javax.swing.JRadioButton" binding="rdDST">
+      <component id="44843" class="javax.swing.JRadioButton" binding="rbDST">
         <constraints>
-          <grid row="7" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Dangal Sining Tanghalan"/>
@@ -158,8 +158,8 @@
       </component>
       <component id="3aabb" class="javax.swing.JLabel" binding="lblEmail">
         <constraints>
-          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="36" height="16"/>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="36" height="48"/>
           </grid>
         </constraints>
         <properties>
@@ -216,8 +216,8 @@
       </component>
       <component id="f752e" class="javax.swing.JLabel" binding="lblContact">
         <constraints>
-          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="107" height="16"/>
+          <grid row="6" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="107" height="48"/>
           </grid>
         </constraints>
         <properties>
@@ -264,7 +264,7 @@
           <text value="Student Number:"/>
         </properties>
       </component>
-      <component id="31b15" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+      <component id="31b15" class="javax.swing.JTextField" binding="tfMiddleName">
         <constraints>
           <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -272,7 +272,7 @@
         </constraints>
         <properties/>
       </component>
-      <component id="43b70" class="javax.swing.JTextField" binding="textField4" default-binding="true">
+      <component id="43b70" class="javax.swing.JTextField" binding="tfStudentNumber">
         <constraints>
           <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -290,103 +290,39 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="4eb64" class="javax.swing.JRadioButton" binding="rdIDDC">
+      <component id="4eb64" class="javax.swing.JRadioButton" binding="rbIDDC">
         <constraints>
-          <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="9" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Indak Dangal Dance Company"/>
         </properties>
       </component>
-      <component id="e5e5e" class="javax.swing.JRadioButton" binding="rdPL">
+      <component id="e5e5e" class="javax.swing.JRadioButton" binding="rbPL">
         <constraints>
-          <grid row="8" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="9" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="PnC Lente"/>
         </properties>
       </component>
-      <component id="9324d" class="javax.swing.JLabel" binding="lblMember">
+      <component id="9324d" class="javax.swing.JLabel" binding="lblMembershipRole">
         <constraints>
-          <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Membership Role:"/>
         </properties>
       </component>
-      <component id="1cdbe" class="javax.swing.JLabel" binding="lblOfficer">
+      <component id="1cdbe" class="javax.swing.JLabel" binding="lblOfficership">
         <constraints>
-          <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Officership:"/>
         </properties>
       </component>
-      <component id="6c04b" class="javax.swing.JTextField" binding="tfOffiver">
-        <constraints>
-          <grid row="8" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="24bba" class="javax.swing.JTextField" binding="tfMember">
-        <constraints>
-          <grid row="7" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="82702" class="javax.swing.JLabel" binding="lblUserName">
-        <constraints>
-          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="User Name: "/>
-        </properties>
-      </component>
-      <component id="e2396" class="javax.swing.JTextField" binding="tfUserName">
-        <constraints>
-          <grid row="9" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="373b7" class="javax.swing.JTextField" binding="tfBirthday">
-        <constraints>
-          <grid row="10" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="6030f" class="javax.swing.JLabel" binding="lblBirthday">
-        <constraints>
-          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Birthday:"/>
-        </properties>
-      </component>
-      <component id="c1176" class="javax.swing.JLabel" binding="lblPassword">
-        <constraints>
-          <grid row="10" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Password: "/>
-        </properties>
-      </component>
-      <component id="2380f" class="javax.swing.JLabel" binding="lblConfirmEmail">
-        <constraints>
-          <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Confirm Email:"/>
-        </properties>
-      </component>
-      <component id="4bf70" class="javax.swing.JTextField" binding="tfConfirmEmail">
+      <component id="6c04b" class="javax.swing.JTextField" binding="tfOfficership">
         <constraints>
           <grid row="9" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -394,23 +330,33 @@
         </constraints>
         <properties/>
       </component>
-      <component id="f27d0" class="javax.swing.JPasswordField" binding="pfPassword">
+      <component id="24bba" class="javax.swing.JTextField" binding="tfMembershipRole">
         <constraints>
-          <grid row="10" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="8" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties/>
       </component>
-      <component id="b3862" class="javax.swing.JLabel" binding="lblAddress">
+      <component id="82702" class="javax.swing.JLabel" binding="lblUsername">
         <constraints>
-          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Address:"/>
+          <text value="User Name: "/>
         </properties>
       </component>
-      <component id="7cf1c" class="javax.swing.JTextField" binding="tfAddress">
+      <component id="e2396" class="javax.swing.JTextField" binding="tfUserName">
+        <constraints>
+          <grid row="10" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="373b7" class="javax.swing.JTextField" binding="tfBirthday">
         <constraints>
           <grid row="11" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
@@ -418,12 +364,168 @@
         </constraints>
         <properties/>
       </component>
-      <component id="493d0" class="javax.swing.JLabel" binding="lblConfirmPassword">
+      <component id="6030f" class="javax.swing.JLabel" binding="lblBirthday">
+        <constraints>
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Birthday:"/>
+        </properties>
+      </component>
+      <component id="c1176" class="javax.swing.JLabel" binding="lblPassword">
         <constraints>
           <grid row="11" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <text value="Password: "/>
+        </properties>
+      </component>
+      <component id="2380f" class="javax.swing.JLabel" binding="lblConfirmEmail">
+        <constraints>
+          <grid row="10" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Confirm Email:"/>
+        </properties>
+      </component>
+      <component id="4bf70" class="javax.swing.JTextField" binding="tfConfirmEmail">
+        <constraints>
+          <grid row="10" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="f27d0" class="javax.swing.JPasswordField" binding="pfPassword">
+        <constraints>
+          <grid row="11" column="6" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="b3862" class="javax.swing.JLabel" binding="lblAddress">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Address:"/>
+        </properties>
+      </component>
+      <component id="7cf1c" class="javax.swing.JTextField" binding="tfAddress">
+        <constraints>
+          <grid row="12" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="493d0" class="javax.swing.JLabel" binding="lblConfirmPassword">
+        <constraints>
+          <grid row="12" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
           <text value="Confirm Password: "/>
+        </properties>
+      </component>
+      <component id="9cdf0" class="javax.swing.JLabel" binding="lblStudentNumberError">
+        <constraints>
+          <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="2c2ec" class="javax.swing.JLabel" binding="lblCollegeDepartmentError">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="92a62" class="javax.swing.JLabel" binding="lblProgramError">
+        <constraints>
+          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="2b784" class="javax.swing.JLabel" binding="lblSectionError">
+        <constraints>
+          <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="161f2" class="javax.swing.JLabel" binding="lblEmailError">
+        <constraints>
+          <grid row="6" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="0" height="48"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="76ab1" class="javax.swing.JLabel" binding="lblContactNumberError">
+        <constraints>
+          <grid row="6" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="0" height="48"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="d2bf6" class="javax.swing.JLabel" binding="lblMembershipRoleError">
+        <constraints>
+          <grid row="8" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="1b811" class="javax.swing.JLabel" binding="lblOfficershipRoleError">
+        <constraints>
+          <grid row="9" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="a6177" class="javax.swing.JLabel" binding="lblUsernameError">
+        <constraints>
+          <grid row="10" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="85fba" class="javax.swing.JLabel" binding="lblBirthdayError">
+        <constraints>
+          <grid row="11" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="48fef" class="javax.swing.JLabel" binding="lblAddressError">
+        <constraints>
+          <grid row="12" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="40022" class="javax.swing.JLabel" binding="lblConfirmEmailError">
+        <constraints>
+          <grid row="10" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
         </properties>
       </component>
     </children>
@@ -444,6 +546,22 @@
       <member id="86019"/>
       <member id="94f44"/>
       <member id="9ab5b"/>
+    </group>
+    <group name="bgAcademicStanding">
+      <member id="938d2"/>
+      <member id="f0780"/>
+    </group>
+    <group name="bgYearLvl">
+      <member id="1288b"/>
+      <member id="beb4d"/>
+      <member id="ee7fc"/>
+      <member id="64693"/>
+    </group>
+    <group name="bgACAorg">
+      <member id="a9978"/>
+      <member id="44843"/>
+      <member id="4eb64"/>
+      <member id="e5e5e"/>
     </group>
   </buttonGroups>
 </form>
