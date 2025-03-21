@@ -1,6 +1,5 @@
 package org.sysc;
 
-import org.sysc.Model.Student;
 import org.sysc.Model.StudentManager;
 import org.sysc.Service.StudentService.StudentService;
 import org.sysc.Utility.InputValidator.InputValidator;
@@ -13,7 +12,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class RegistrationForm extends JFrame {
-
     private JPanel MainPanel;
     private JLabel lblFirstName;
     private JTextField tfFirstName;
@@ -80,12 +78,18 @@ public class RegistrationForm extends JFrame {
     private JLabel lblBirthdayError;
     private JLabel lblAddressError;
     private JLabel lblConfirmEmailError;
+    private JLabel lblPasswordError;
+    private JLabel lblConfirmPasswordError;
+    private JButton btnRegisteredStudents;
 
     private final StudentManager studentManager;
     private  final StudentService studentService;
     RegistrationForm() {
         studentManager = new StudentManager(100);
         studentService = new StudentService(100);
+
+
+
         setContentPane(MainPanel);
         // Wrap MainPanel in a JScrollPane
         JScrollPane scrollPane = new JScrollPane(MainPanel);
@@ -96,19 +100,62 @@ public class RegistrationForm extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setSize(1024, 768);
         setVisible(true);
+
+
+        JButton btnShowDetails = new JButton("Show Student Details");
+
+        // ActionListener for the "Show Details" button
+        btnRegisteredStudents.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // Open the pop-up window with the list of students
+                System.out.println(studentService.getStudentCount());
+                new StudentDetails(studentService.getAllStudents(),studentService.getStudentCount());
+            }
+        });
+
+
+
         btnSignUp.addActionListener(new ActionListener() {
             @Override
 
             public void actionPerformed(ActionEvent e) {
                 if (validateForm()) {
-                  if(studentService.addStudent(tfUserName.getText()))
-                    JOptionPane.showMessageDialog(null, "Form submitted successfully!");
-                  else {
-                      JOptionPane.showMessageDialog(null, "Failed to add student. Username may already exist or another issue occurred.");
-                  }
-                    // Proceed with saving the student or other logic
-                } else {
+                    // Extract all field values
+                    String firstName = tfFirstName.getText();
+                    String middleName = tfMiddleName.getText();
+                    String lastName = tfLastName.getText();
+                    String birthday = tfBirthday.getText();
+                    String address = tfAddress.getText();
+                    String contactNumber = tfContact.getText();
+                    int studentNumber = Integer.parseInt(tfStudentNumber.getText());
+                    String academicStanding = rbRegular.isSelected() ? "Regular" : "Irregular"; // Example for radio buttons
+                    String yearLvl = rb1stYear.isSelected() ? "1st Year"
+                            : rb2ndYear.isSelected() ? "2nd Year"
+                            : rb3rdYear.isSelected() ? "3rd Year" : "4th Year";
+                    String collegeDepartment = tfCollegeDepartment.getText();
+                    String program = tfProgram.getText();
+                    String section = tfSection.getText();
+                    String ACA = rbDSA.isSelected() ? "Dangal Singing Ambassadors"
+                            : rbDST.isSelected() ? "Dangal Singing Tanghalan"
+                            : rbIDDC.isSelected() ? "Indak Dangal Dance Company"
+                            : "Pnc Lente";
 
+                    String membershipRole = tfMembershipRole.getText();
+                    String officership = tfOfficership.getText();
+                    String username = tfUserName.getText();
+                    String password = new String(pfPassword.getPassword());
+                    String emailAddress = tfEmail.getText();
+
+                    // Add the student using the service
+                    if (studentService.addStudent(firstName, middleName, lastName, birthday, address, contactNumber,
+                            studentNumber, academicStanding, yearLvl, collegeDepartment, program, section,
+                            ACA, membershipRole, officership, username, password, emailAddress)) {
+                        JOptionPane.showMessageDialog(null, "Form submitted successfully!");
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Failed to add student. Username may already exist or another issue occurred.");
+                    }
+                } else {
                     JOptionPane.showMessageDialog(null, "Please correct the highlighted errors.");
                 }
             }
@@ -132,7 +179,10 @@ public class RegistrationForm extends JFrame {
         errorMessages.put(lblOfficershipRoleError, InputValidator.validText(tfOfficership.getText()));
         errorMessages.put(lblUsernameError,InputValidator.validUserName(tfUserName.getText(), studentService));
         errorMessages.put(lblBirthdayError,InputValidator.validText(tfBirthday.getText()));
+        errorMessages.put(lblAddressError, InputValidator.validText(tfAddress.getText()));
         errorMessages.put(lblConfirmEmailError, InputValidator.confirmEmail(tfEmail.getText(), tfConfirmEmail.getText()));
+        errorMessages.put(lblPasswordError, InputValidator.validPassword(new String(pfPassword.getPassword())));
+        errorMessages.put(lblConfirmPasswordError, InputValidator.validConfirmPassword(new String(pfPassword.getPassword()), new String(pfConfirmPassword.getPassword())));
         // Clear and update all error messages
         boolean hasError = false;
         for (Map.Entry<JLabel, String> entry : errorMessages.entrySet()) {

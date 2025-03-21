@@ -1,5 +1,7 @@
 package org.sysc.Model;
 
+import java.util.Arrays;
+
 public class StudentManager {
     private final Student[] students;
     private int studentCount;
@@ -9,11 +11,13 @@ public class StudentManager {
     }
 
     public boolean addStudent(Student student){
-        if(studentCount > students.length){
-            return  false;
+        if (studentCount >= students.length) {
+            return false; // Capacity reached
         }
         students[studentCount] = student;
         studentCount++;
+        System.out.println("Student added: " + student.getFirstName() + " " + student.getLastName()); // Debug log
+
         return true;
     }
     public int getStudentCount() {
@@ -29,4 +33,13 @@ public class StudentManager {
 
         return false;
     }
+
+    public Student[] getAllStudents() {
+        System.out.println("hello");
+        for(int i = 0; i < studentCount;i++){
+            Student student = students[i];
+            System.out.println("hello");
+        };
+        return  students;
+}
 }
