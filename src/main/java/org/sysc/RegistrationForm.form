@@ -20,7 +20,7 @@
       </component>
       <component id="4f14e" class="javax.swing.JButton" binding="btnSignUp">
         <constraints>
-          <grid row="13" column="0" row-span="1" col-span="8" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <grid row="13" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Sign Up"/>
@@ -129,6 +129,7 @@
           <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <selected value="true"/>
           <text value="Dangal Singing Ambassadors"/>
         </properties>
       </component>
@@ -171,6 +172,7 @@
           <grid row="3" column="0" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <selected value="true"/>
           <text value="Regular"/>
         </properties>
       </component>
@@ -187,6 +189,7 @@
           <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
+          <selected value="true"/>
           <text value="1st Year"/>
         </properties>
       </component>
@@ -402,7 +405,9 @@
             <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <text value=""/>
+        </properties>
       </component>
       <component id="b3862" class="javax.swing.JLabel" binding="lblAddress">
         <constraints>
@@ -526,6 +531,30 @@
         </constraints>
         <properties>
           <text value=""/>
+        </properties>
+      </component>
+      <component id="4cbc2" class="javax.swing.JLabel" binding="lblPasswordError">
+        <constraints>
+          <grid row="11" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="fb0cd" class="javax.swing.JLabel" binding="lblConfirmPasswordError">
+        <constraints>
+          <grid row="12" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="8e53c" class="javax.swing.JButton" binding="btnRegisteredStudents">
+        <constraints>
+          <grid row="13" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Registered Students"/>
         </properties>
       </component>
     </children>

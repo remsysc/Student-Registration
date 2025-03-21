@@ -7,23 +7,36 @@ public class StudentService {
     private final StudentManager studentManager;
 
     public StudentService(int capacity) {
-        // Initialize StudentManager with the given capacity
-        this.studentManager = new StudentManager(capacity);
+        this.studentManager = new StudentManager(capacity); // Initialize with capacity
     }
 
-    // Wrapper method to add a student
-    public boolean addStudent(String username) {
-        Student student = new Student(username);
+    public boolean addStudent(String firstName, String middleName, String lastName, String birthday, String address,
+                              String contactNumber, int studentNumber, String academicStanding, String yearLvl,
+                              String collegeDepartment, String program, String section, String ACA,
+                              String membershipRole, String officership, String username, String password,
+                              String emailAddress) {
+
+        // Validate username
+        if (studentManager.isUsernameTaken(username)) {
+            return false; // Username already exists
+        }
+
+        // Create a Student object
+        Student student = new Student(firstName, middleName, lastName, birthday, address, contactNumber,
+                studentNumber, academicStanding, yearLvl, collegeDepartment, program, section,
+                ACA, membershipRole, officership, username, password, emailAddress);
+
+        // Add the student
         return studentManager.addStudent(student);
     }
 
-    // Wrapper method to get the total number of students
     public int getStudentCount() {
         return studentManager.getStudentCount();
     }
-
-    public boolean isUsernameTaken(String username){
-
+    public Student[] getAllStudents(){
+        return studentManager.getAllStudents();
+    }
+    public boolean isUsernameTaken(String username) {
         return studentManager.isUsernameTaken(username);
     }
 }
