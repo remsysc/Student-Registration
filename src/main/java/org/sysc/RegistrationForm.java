@@ -33,7 +33,7 @@ public class RegistrationForm extends JFrame {
     private JLabel lblMiddleName;
     private JTextField tfStudentNumber;
     private JLabel lblStudentNumber;
-    private JLabel lblCollegeDepartment;
+    private JLabel lblCollegeProgram;
     private JLabel lblAcademicStanding;
     private JLabel lblSection;
     private JTextField tfEmail;
@@ -61,13 +61,12 @@ public class RegistrationForm extends JFrame {
     private JRadioButton rbIrregular;
     private JRadioButton rb1stYear;
     private JRadioButton rb2ndYear;
-    private JLabel lblProgram;
-    private JTextField tfCollegeDepartment;
+    private JTextField tfCollegeProgram;
     private JTextField tfProgram;
     private JRadioButton rb3rdYear;
     private JRadioButton rb4thYear;
     private JLabel lblStudentNumberError;
-    private JLabel lblCollegeDepartmentError;
+    private JLabel lblCollegeProgramError;
     private JLabel lblProgramError;
     private JLabel lblSectionError;
     private JLabel lblEmailError;
@@ -135,8 +134,7 @@ public class RegistrationForm extends JFrame {
                     String yearLvl = rb1stYear.isSelected() ? "1st Year"
                             : rb2ndYear.isSelected() ? "2nd Year"
                             : rb3rdYear.isSelected() ? "3rd Year" : "4th Year";
-                    String collegeDepartment = tfCollegeDepartment.getText();
-                    String program = tfProgram.getText();
+                    String collegeProgram = tfCollegeProgram.getText();
                     String section = tfSection.getText();
                     String ACA = rbDSA.isSelected() ? "Dangal Singing Ambassadors"
                             : rbDST.isSelected() ? "Dangal Singing Tanghalan"
@@ -151,7 +149,7 @@ public class RegistrationForm extends JFrame {
 
                     // Add the student using the service
                     if (studentService.addStudent(firstName, middleName, lastName, birthday, address, contactNumber,
-                            studentNumber, academicStanding, yearLvl, collegeDepartment, program, section,
+                            studentNumber, academicStanding, yearLvl, collegeProgram, section,
                             ACA, membershipRole, officership, username, password, emailAddress)) {
                         JOptionPane.showMessageDialog(null, "Form submitted successfully!");
                     } else {
@@ -172,8 +170,7 @@ public class RegistrationForm extends JFrame {
         errorMessages.put(lblLastNameError, InputValidator.validName(tfLastName.getText()));
         errorMessages.put(lblMiddleNameError, InputValidator.validName(tfMiddleName.getText()));
         errorMessages.put(lblStudentNumberError, InputValidator.validNumber(tfStudentNumber.getText()));
-        errorMessages.put(lblCollegeDepartmentError, InputValidator.validText(tfCollegeDepartment.getText()));
-        errorMessages.put(lblProgramError, InputValidator.validText(tfProgram.getText()));
+        errorMessages.put(lblCollegeProgramError, InputValidator.validText(tfCollegeProgram.getText()));
         errorMessages.put(lblSectionError, InputValidator.validText(tfSection.getText()));
         errorMessages.put(lblEmailError, InputValidator.validEmailAddress(tfEmail.getText()));
         errorMessages.put(lblContactNumberError, InputValidator.validContactNumber(tfContact.getText()));

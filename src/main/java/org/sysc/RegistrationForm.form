@@ -30,18 +30,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="9adb4" class="javax.swing.JLabel" binding="lblSection">
-        <constraints>
-          <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="71" height="17"/>
-          </grid>
-        </constraints>
-        <properties>
-          <horizontalAlignment value="0"/>
-          <text value="Section:"/>
-        </properties>
-      </component>
-      <component id="2696f" class="javax.swing.JLabel" binding="lblCollegeDepartment">
+      <component id="2696f" class="javax.swing.JLabel" binding="lblCollegeProgram">
         <constraints>
           <grid row="3" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="114" height="17"/>
@@ -49,7 +38,7 @@
         </constraints>
         <properties>
           <horizontalAlignment value="0"/>
-          <text value="College Department:"/>
+          <text value="College Department-Program:"/>
         </properties>
       </component>
       <component id="d5dbd" class="javax.swing.JTextField" binding="tfContact">
@@ -77,16 +66,6 @@
         </constraints>
         <properties/>
       </component>
-      <component id="33c7d" class="javax.swing.JTextField" binding="tfSection">
-        <constraints>
-          <grid row="4" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="71" height="16"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value=""/>
-        </properties>
-      </component>
       <component id="a9978" class="javax.swing.JRadioButton" binding="rbDSA">
         <constraints>
           <grid row="8" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
@@ -104,25 +83,6 @@
         <properties>
           <text value="Dangal Sining Tanghalan"/>
         </properties>
-      </component>
-      <component id="59f26" class="javax.swing.JLabel" binding="lblProgram">
-        <constraints>
-          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="88" height="17"/>
-          </grid>
-        </constraints>
-        <properties>
-          <horizontalAlignment value="0"/>
-          <text value="Program:"/>
-        </properties>
-      </component>
-      <component id="85eb7" class="javax.swing.JTextField" binding="tfProgram">
-        <constraints>
-          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="88" height="16"/>
-          </grid>
-        </constraints>
-        <properties/>
       </component>
       <component id="2f22c" class="javax.swing.JLabel" binding="lblMiddleName">
         <constraints>
@@ -149,7 +109,7 @@
       <component id="31b15" class="javax.swing.JTextField" binding="tfMiddleName">
         <constraints>
           <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="88" height="34"/>
+            <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties/>
@@ -157,7 +117,7 @@
       <component id="43b70" class="javax.swing.JTextField" binding="tfStudentNumber">
         <constraints>
           <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="88" height="34"/>
+            <preferred-size width="150" height="-1"/>
           </grid>
         </constraints>
         <properties>
@@ -269,7 +229,7 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="2c2ec" class="javax.swing.JLabel" binding="lblCollegeDepartmentError">
+      <component id="2c2ec" class="javax.swing.JLabel" binding="lblCollegeProgramError">
         <constraints>
           <grid row="5" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="114" height="0"/>
@@ -281,37 +241,13 @@
           <text value=""/>
         </properties>
       </component>
-      <component id="2707e" class="javax.swing.JTextField" binding="tfCollegeDepartment">
+      <component id="2707e" class="javax.swing.JTextField" binding="tfCollegeProgram">
         <constraints>
           <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="1" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="114" height="16"/>
           </grid>
         </constraints>
         <properties/>
-      </component>
-      <component id="92a62" class="javax.swing.JLabel" binding="lblProgramError">
-        <constraints>
-          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="88" height="0"/>
-          </grid>
-        </constraints>
-        <properties>
-          <horizontalAlignment value="0"/>
-          <horizontalTextPosition value="10"/>
-          <text value=""/>
-        </properties>
-      </component>
-      <component id="2b784" class="javax.swing.JLabel" binding="lblSectionError">
-        <constraints>
-          <grid row="5" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="71" height="0"/>
-          </grid>
-        </constraints>
-        <properties>
-          <horizontalAlignment value="0"/>
-          <horizontalTextPosition value="10"/>
-          <text value=""/>
-        </properties>
       </component>
       <component id="10431" class="javax.swing.JTextField" binding="tfEmail">
         <constraints>
@@ -629,6 +565,39 @@
         </constraints>
         <properties>
           <text value="Registered Students"/>
+        </properties>
+      </component>
+      <component id="33c7d" class="javax.swing.JTextField" binding="tfSection">
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="71" height="16"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="9adb4" class="javax.swing.JLabel" binding="lblSection">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="2" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="71" height="17"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <text value="Section:"/>
+        </properties>
+      </component>
+      <component id="2b784" class="javax.swing.JLabel" binding="lblSectionError">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="71" height="0"/>
+          </grid>
+        </constraints>
+        <properties>
+          <horizontalAlignment value="0"/>
+          <horizontalTextPosition value="10"/>
+          <text value=""/>
         </properties>
       </component>
     </children>
