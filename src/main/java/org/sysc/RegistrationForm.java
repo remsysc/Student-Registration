@@ -81,6 +81,8 @@ public class RegistrationForm extends JFrame {
     private JLabel lblPasswordError;
     private JLabel lblConfirmPasswordError;
     private JButton btnRegisteredStudents;
+    private JLabel lblRegistered;
+    private JLabel lblStudentInfo;
 
     private final StudentManager studentManager;
     private  final StudentService studentService;
@@ -176,7 +178,6 @@ public class RegistrationForm extends JFrame {
         errorMessages.put(lblEmailError, InputValidator.validEmailAddress(tfEmail.getText()));
         errorMessages.put(lblContactNumberError, InputValidator.validContactNumber(tfContact.getText()));
         errorMessages.put(lblMembershipRoleError, InputValidator.validText(tfMembershipRole.getText()));
-        errorMessages.put(lblOfficershipRoleError, InputValidator.validText(tfOfficership.getText()));
         errorMessages.put(lblUsernameError,InputValidator.validUserName(tfUserName.getText(), studentService));
         errorMessages.put(lblBirthdayError,InputValidator.validText(tfBirthday.getText()));
         errorMessages.put(lblAddressError, InputValidator.validText(tfAddress.getText()));
