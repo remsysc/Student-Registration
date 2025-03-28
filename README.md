@@ -2,7 +2,7 @@
 > For CCS103, all about Swing Swing.
 ## Student Registration
 >  [!IMPORTANT]
-> uses the java sdk openjk-23
+> uses sdk openjk-23
 > 
 > IDE: Intellij
 > Plug-Ins: Java Swing UI Designer
