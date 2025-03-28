@@ -25,7 +25,7 @@
 >  [!TIP]
 > 
 > Make sure to scroll down the page to see the download for the community edition.
-## Example screenshots
+# Example screenshots
 >
 **Registration Page**
 ![Screenshots#1](https://64.media.tumblr.com/d7525a257f3a0dfca1d39826cdee98c4/84f222ae6a69b694-9d/s2048x3072/e3b05264ebbcd76ec566699f3d59cc899f30b71b.pnj)
