@@ -3,6 +3,14 @@ package org.sysc.Service.StudentService;
 import org.sysc.Model.Student;
 import org.sysc.Model.StudentManager;
 
+// student service act as service layer between the StudentManager and other parts
+// of my application, in this case the UI.
+//It abstracts the core management logic provided by StudentManager
+// and may add additional functionality like validation,
+// what for? Serves as a wrapper around the StudentManager
+// to make it easier to integrate with other layers (like UI or API).
+
+
 public class StudentService {
     private final StudentManager studentManager;
 

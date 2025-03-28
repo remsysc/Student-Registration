@@ -3,6 +3,11 @@ package org.sysc.Utility.InputValidator;
 import org.apache.commons.validator.routines.EmailValidator;
 import org.sysc.Service.StudentService.StudentService;
 
+//serving as a helper or utility class
+//just simply making things centralized and have a separation of concers
+// to validate strings, numbers, emails, and other forms of data.
+
+
 public class InputValidator
 {
 

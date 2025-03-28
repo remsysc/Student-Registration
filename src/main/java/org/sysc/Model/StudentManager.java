@@ -2,6 +2,10 @@ package org.sysc.Model;
 
 import java.util.Arrays;
 
+//manage the student class
+// creates a loop of student
+// acting as temp. database
+
 public class StudentManager {
     private final Student[] students;
     private int studentCount;
@@ -38,7 +42,6 @@ public class StudentManager {
         System.out.println("hello");
         for(int i = 0; i < studentCount;i++){
             Student student = students[i];
-            System.out.println("hello");
         };
         return  students;
 }

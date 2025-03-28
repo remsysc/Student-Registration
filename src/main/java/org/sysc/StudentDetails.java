@@ -4,6 +4,9 @@ import org.sysc.Model.Student;
 
 import javax.swing.*;
 
+//simply loops the array of students and showing each object's data.
+
+
 public class StudentDetails extends JFrame {
     private JTextArea textArea;
     private JPanel panel1;
@@ -43,7 +46,6 @@ public class StudentDetails extends JFrame {
             details.append("Email: ").append(student.getEmail()).append("\n");
             details.append("--------------------------------------------\n");
         }
-        System.out.println("Student details:\n" + details.toString());
         // Set the content to the text area
         textArea.setText(details.toString());
 
