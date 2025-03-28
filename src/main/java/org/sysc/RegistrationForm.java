@@ -3,7 +3,6 @@ package org.sysc;
 import org.sysc.Model.StudentManager;
 import org.sysc.Service.StudentService.StudentService;
 import org.sysc.Utility.InputValidator.InputValidator;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -89,19 +88,16 @@ public class RegistrationForm extends JFrame {
         studentManager = new StudentManager(100);
         studentService = new StudentService(100);
 
-
-
         setContentPane(MainPanel);
         // Wrap MainPanel in a JScrollPane
         JScrollPane scrollPane = new JScrollPane(MainPanel);
 
         // Add the JScrollPane to the JFrame
         setContentPane(scrollPane);
-        setTitle("Rem");
+        setTitle("Arts and Culture Affairs Registration");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(1024, 768);
+        setSize(1440, 900);
         setVisible(true);
-
 
         JButton btnShowDetails = new JButton("Show Student Details");
 
@@ -114,8 +110,6 @@ public class RegistrationForm extends JFrame {
                 new StudentDetails(studentService.getAllStudents(),studentService.getStudentCount());
             }
         });
-
-
 
         btnSignUp.addActionListener(new ActionListener() {
             @Override
@@ -192,8 +186,6 @@ public class RegistrationForm extends JFrame {
                 hasError = true;
             }
         }
-
         return !hasError; // Return true if no errors
     }
-
 }
