@@ -1,7 +1,6 @@
-# Midterm Project
+# Midterm Project | Student Registration
 > [!NOTE]
 > For CCS103, all about Swing Swing.
-## Student Registration
 
 ## Releases | Download Here
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/remsysc/Student-Registration?label=Latest%20Release)
