@@ -2,8 +2,17 @@
 > [!NOTE]
 > For CCS103, all about Swing Swing.
 ## Student Registration
+
+## Releases | Download Here
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/remsysc/Student-Registration?label=Latest%20Release)
+- **[v0.1](https://github.com/remsysc/Student-Registration/releases/tag/v0.1)** - Initial release
 >  [!IMPORTANT]
-> uses sdk openjdk-23
+> Requires java runtime envinroment 17.
+> 
+> We recommended downloading the latest from [Oracle](https://www.oracle.com/java/technologies/downloads/#jdk24-windows)
+
+>  [!IMPORTANT]
+> Uses sdk openjdk-23
 > 
 > IDE: [Intellij IDEA Community Edition](https://www.jetbrains.com/idea/download/?section=windows)
 >
