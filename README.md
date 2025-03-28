@@ -3,10 +3,15 @@
 > For CCS103, all about Swing Swing.
 ## Student Registration
 >  [!IMPORTANT]
-> uses sdk openjk-23
+> uses sdk openjdk-23
 > 
-> IDE: Intellij
+> IDE: [Intellij IDEA Community Edition](https://www.jetbrains.com/idea/download/?section=windows)
+>
 > Plug-Ins: Java Swing UI Designer
+
+>  [!TIP]
+> 
+> Make sure to scroll down the page to see the download for the community edition.
 ### Example screenshots
 >
 **Registration Page**
