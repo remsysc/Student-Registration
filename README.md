@@ -7,7 +7,7 @@
 > 
 > IDE: [Intellij IDEA Community Edition](https://www.jetbrains.com/idea/download/?section=windows)
 >
-> Plug-Ins: Java Swing UI Designer
+> Plug-Ins: Swing UI Designer
 
 >  [!TIP]
 > 
