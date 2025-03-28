@@ -8,7 +8,7 @@
 >  [!IMPORTANT] 
 > Requires java runtime envinroment 17.
 > 
-> We recommended downloading the latest from [Oracle](https://www.oracle.com/java/technologies/downloads/#jdk24-windows)
+> We recommend downloading the latest from [Oracle](https://www.oracle.com/java/technologies/downloads/#jdk24-windows)
 
 ## How to Run? 
 ```
