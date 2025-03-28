@@ -24,7 +24,7 @@
 
 >  [!TIP]
 > 
-> Make sure to scroll down the page to see the download for the community edition.
+> Make sure to scroll down the page to see the download for the [Intellij IDEA Community Edition](https://www.jetbrains.com/idea/download/?section=windows)
 # Example screenshots
 >
 **Registration Page**
