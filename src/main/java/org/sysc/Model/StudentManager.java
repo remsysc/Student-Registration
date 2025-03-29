@@ -20,7 +20,6 @@ public class StudentManager {
         }
         students[studentCount] = student;
         studentCount++;
-        System.out.println("Student added: " + student.getFirstName() + " " + student.getLastName()); // Debug log
 
         return true;
     }
@@ -39,7 +38,6 @@ public class StudentManager {
     }
 
     public Student[] getAllStudents() {
-        System.out.println("hello");
         for(int i = 0; i < studentCount;i++){
             Student student = students[i];
         };

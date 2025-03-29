@@ -10,7 +10,7 @@ import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RegistrationForm extends JFrame {
+public class RegistrationForm extends JPanel {
     private JPanel MainPanel;
     private JLabel lblFirstName;
     private JTextField tfFirstName;
@@ -60,12 +60,12 @@ public class RegistrationForm extends JFrame {
     private JRadioButton rbIrregular;
     private JRadioButton rb1stYear;
     private JRadioButton rb2ndYear;
-    private JTextField tfCollegeProgram;
+    private JTextField tfCollegeDepartmentProgram;
     private JTextField tfProgram;
     private JRadioButton rb3rdYear;
     private JRadioButton rb4thYear;
     private JLabel lblStudentNumberError;
-    private JLabel lblCollegeProgramError;
+    private JLabel lblCollegeDepartmentProgramError;
     private JLabel lblProgramError;
     private JLabel lblSectionError;
     private JLabel lblEmailError;
@@ -82,34 +82,36 @@ public class RegistrationForm extends JFrame {
     private JLabel lblRegistered;
     private JLabel lblStudentInfo;
 
-    private final StudentManager studentManager;
+    private StudentDetails studentDetailsWindow;
+
+
     private  final StudentService studentService;
     RegistrationForm() {
-        studentManager = new StudentManager(100);
+
         studentService = new StudentService(100);
 
-        setContentPane(MainPanel);
+
+
+        setLayout(new BorderLayout());
+        add(MainPanel, BorderLayout.CENTER);
         // Wrap MainPanel in a JScrollPane
-        JScrollPane scrollPane = new JScrollPane(MainPanel);
 
-        // Add the JScrollPane to the JFrame
-        setContentPane(scrollPane);
-        setTitle("Arts and Culture Affairs Registration");
-        setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setSize(1440, 900);
-        setVisible(true);
 
-        JButton btnShowDetails = new JButton("Show Student Details");
 
         // ActionListener for the "Show Details" button
         btnRegisteredStudents.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                // Open the pop-up window with the list of students
-                System.out.println(studentService.getStudentCount());
-                new StudentDetails(studentService.getAllStudents(),studentService.getStudentCount());
+                if (studentDetailsWindow == null || !studentDetailsWindow.isDisplayable()) {
+                    // Create a new instance if it doesn't exist or has been closed
+                    studentDetailsWindow = new StudentDetails(studentService.getAllStudents(), studentService.getStudentCount());
+                } else {
+                    // Bring the existing window to the front
+                    studentDetailsWindow.toFront();
+                }
             }
         });
+
 
         btnSignUp.addActionListener(new ActionListener() {
             @Override
@@ -128,7 +130,7 @@ public class RegistrationForm extends JFrame {
                     String yearLvl = rb1stYear.isSelected() ? "1st Year"
                             : rb2ndYear.isSelected() ? "2nd Year"
                             : rb3rdYear.isSelected() ? "3rd Year" : "4th Year";
-                    String collegeProgram = tfCollegeProgram.getText();
+                    String collegeDepartmentProgram = tfCollegeDepartmentProgram.getText();
                     String section = tfSection.getText();
                     String ACA = rbDSA.isSelected() ? "Dangal Singing Ambassadors"
                             : rbDST.isSelected() ? "Dangal Singing Tanghalan"
@@ -142,10 +144,11 @@ public class RegistrationForm extends JFrame {
                     String emailAddress = tfEmail.getText();
 
                     // Add the student using the service
-                    if (studentService.addStudent(firstName, middleName, lastName, birthday, address, contactNumber,
-                            studentNumber, academicStanding, yearLvl, collegeProgram, section,
-                            ACA, membershipRole, officership, username, password, emailAddress)) {
+                    if (studentService.addStudent(firstName,  middleName, lastName,birthday,address, contactNumber,
+                            studentNumber, academicStanding,  yearLvl,  collegeDepartmentProgram,section,
+                            ACA,  membershipRole, officership, username, password,  emailAddress)) {
                         JOptionPane.showMessageDialog(null, "Form submitted successfully!");
+                        clearFormFields();
                     } else {
                         JOptionPane.showMessageDialog(null, "Failed to add student. Username may already exist or another issue occurred.");
                     }
@@ -164,7 +167,7 @@ public class RegistrationForm extends JFrame {
         errorMessages.put(lblLastNameError, InputValidator.validName(tfLastName.getText()));
         errorMessages.put(lblMiddleNameError, InputValidator.validName(tfMiddleName.getText()));
         errorMessages.put(lblStudentNumberError, InputValidator.validNumber(tfStudentNumber.getText()));
-        errorMessages.put(lblCollegeProgramError, InputValidator.validText(tfCollegeProgram.getText()));
+        errorMessages.put(lblCollegeDepartmentProgramError, InputValidator.validText(tfCollegeDepartmentProgram.getText()));
         errorMessages.put(lblSectionError, InputValidator.validText(tfSection.getText()));
         errorMessages.put(lblEmailError, InputValidator.validEmailAddress(tfEmail.getText()));
         errorMessages.put(lblContactNumberError, InputValidator.validContactNumber(tfContact.getText()));
@@ -188,4 +191,51 @@ public class RegistrationForm extends JFrame {
         }
         return !hasError; // Return true if no errors
     }
+    private void clearFormFields() {
+        tfFirstName.setText("");
+        tfMiddleName.setText("");
+        tfLastName.setText("");
+        tfBirthday.setText("");
+        tfAddress.setText("");
+        tfContact.setText("");
+        tfStudentNumber.setText("");
+        tfCollegeDepartmentProgram.setText("");
+        tfSection.setText("");
+        tfMembershipRole.setText("");
+        tfOfficership.setText("");
+        tfUserName.setText("");
+        pfPassword.setText("");
+        tfEmail.setText("");
+        tfConfirmEmail.setText("");
+        pfConfirmPassword.setText("");
+
+        rbRegular.setSelected(false);
+        rbIrregular.setSelected(false);
+        rb1stYear.setSelected(false);
+        rb2ndYear.setSelected(false);
+        rb3rdYear.setSelected(false);
+        rb4thYear.setSelected(false);
+        rbDSA.setSelected(false);
+        rbDST.setSelected(false);
+        rbIDDC.setSelected(false);
+        rbPL.setSelected(false);
+
+        // Clear error labels
+        lblFirstNameError.setText("");
+        lblLastNameError.setText("");
+        lblMiddleNameError.setText("");
+        lblStudentNumberError.setText("");
+        lblCollegeDepartmentProgramError.setText("");
+        lblSectionError.setText("");
+        lblEmailError.setText("");
+        lblContactNumberError.setText("");
+        lblMembershipRoleError.setText("");
+        lblUsernameError.setText("");
+        lblBirthdayError.setText("");
+        lblAddressError.setText("");
+        lblConfirmEmailError.setText("");
+        lblPasswordError.setText("");
+        lblConfirmPasswordError.setText("");
+    }
+
 }

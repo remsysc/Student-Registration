@@ -6,6 +6,7 @@ import javax.swing.*;
 
 //simply loops the array of students and showing each object's data.
 
+//better to convert this to a dialog, but im lazy.
 
 public class StudentDetails extends JFrame {
     private JTextArea textArea;
@@ -36,8 +37,7 @@ public class StudentDetails extends JFrame {
             details.append("Student Number: ").append(student.getStudentNumber()).append("\n");
             details.append("Academic Standing: ").append(student.getAcademicStanding()).append("\n");
             details.append("Year Level: ").append(student.getYearLvl()).append("\n");
-            details.append("College Department: ").append(student.getCollegeDeparment()).append("\n");
-            details.append("Program: ").append(student.getProgram()).append("\n");
+            details.append("College Department: ").append(student.getCollegeDepartmentProgram()).append("\n");
             details.append("Section: ").append(student.getSection()).append("\n");
             details.append("ACA: ").append(student.getACA()).append("\n");
             details.append("Membership Role: ").append(student.getMembershipRole()).append("\n");

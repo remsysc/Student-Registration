@@ -3,21 +3,16 @@ package org.sysc.Model;
 public class Student {
 
     private String firstName;
-
-
     private String middleName;
     private String lastName;
     private String birthday;
     private String address;
-
-
     private String contactNumber;
     private int studentNumber;
 
     private String academicStanding;
     private String yearLvl;
-    private String collegeDeparment;
-    private String program;
+    private String collegeDepartmentProgram;
     private String section;
 
     private String ACA;
@@ -32,7 +27,7 @@ public class Student {
 
 
     public Student(String firstName, String middleName, String lastName, String birthday, String address, String contactNumber,
-                   int studentNumber, String academicStanding, String yearLvl, String collegeDeparment, String program, String section,
+                   int studentNumber, String academicStanding, String yearLvl, String collegeDepartmentProgram, String section,
                    String ACA, String membershipRole, String officership, String username, String password, String emailAddress) {
         this.firstName = firstName;
         this.middleName = middleName;
@@ -43,8 +38,7 @@ public class Student {
         this.studentNumber = studentNumber;
         this.academicStanding = academicStanding;
         this.yearLvl = yearLvl;
-        this.collegeDeparment = collegeDeparment;
-        this.program = program;
+        this.collegeDepartmentProgram = collegeDepartmentProgram;
         this.section = section;
         this.ACA = ACA;
         this.membershipRole = membershipRole;
@@ -89,12 +83,8 @@ public class Student {
         return yearLvl;
     }
 
-    public String getCollegeDeparment() {
-        return collegeDeparment;
-    }
-
-    public String getProgram() {
-        return program;
+    public String getCollegeDepartmentProgram() {
+        return collegeDepartmentProgram;
     }
 
     public String getSection() {
