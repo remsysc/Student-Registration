@@ -24,7 +24,7 @@
 
 >  [!TIP]
 > 
-> Make sure to scroll down over the Oracle website to see the download for the [Intellij](https://www.jetbrains.com/idea/download/?section=windows)
+> Make sure to scroll down over the website to see the download for the [Intellij](https://www.jetbrains.com/idea/download/?section=windows)
 # Example screenshots
 >
 **Registration Page**
