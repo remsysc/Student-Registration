@@ -4,8 +4,11 @@
 
 # Releases | Download Here
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/remsysc/Student-Registration?label=Latest%20Release)
-- **[v0.2](https://github.com/remsysc/Student-Registration/releases/tag/v0.2)** - Better pop-up window
-- **[v0.1](https://github.com/remsysc/Student-Registration/releases/tag/v0.1)** - Initial release
+
+| Version | Description                   | Link                                    |
+|---------|-------------------------------|-----------------------------------------|
+| v0.2 | Better Pop-up and fixed bugs | [Download](https://github.com/remsysc/Student-Registration/releases/tag/v0.2) |
+| v0.1  | Initial Release    | [Download](https://github.com/remsysc/Student-Registration/releases/tag/v0.1) |
 
 >  [!IMPORTANT] 
 > Requires java runtime envinroment 17.
